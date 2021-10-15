@@ -10,6 +10,12 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
+// header('Access-Control-Allow-Origin: http://localhost:3000');
+// header('Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS'); 
+// header('Access-Control-Allow-Headers: Origin, X-Requested-With,Authorization,  Content-Type, Accept');
+// header('sta: 200');
+
+
 
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)

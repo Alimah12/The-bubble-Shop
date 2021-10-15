@@ -16,7 +16,7 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->string('item_name');
-            $table->decimal('unit_price',2,2);
+            $table->integer('unit_price');
             $table->string('wash_type');
             $table->timestamps();
         });

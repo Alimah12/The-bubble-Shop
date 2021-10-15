@@ -11,6 +11,7 @@ class AuthController extends Controller
 {
     public function register(Request $request){
 
+        // print_r($request);
         $fields = $request->validate([
             'name' => 'required|string',
             'email' => 'required|string|unique:users,email',
@@ -34,7 +35,7 @@ class AuthController extends Controller
             'token' => $token
         ];
 
-        return response($response,201);
+        return response($response,200);
 
 
     }
